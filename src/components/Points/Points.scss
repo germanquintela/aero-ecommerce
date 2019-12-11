@@ -1,0 +1,18 @@
+@import '../../scss/general.scss';
+
+.points {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+    &__amount{
+        padding-right: 1rem;
+        color: $yellow;
+        font: $medium-text-m;
+    }
+
+    &__icon {
+        width: 2rem;
+    }
+}

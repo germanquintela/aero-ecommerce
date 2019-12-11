@@ -1,0 +1,61 @@
+@import '../../scss/general.scss';
+
+.nav {
+    background-color: white;
+    box-shadow: $shadow;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+        &__cart-container {
+            padding: 0 2rem;
+            position: relative;
+            cursor: pointer;
+
+            &__cart-pill {
+                position: absolute;
+                background-color: $blue;
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                color: $white;
+                font: $small-text-m;
+                font-size: 8px;
+                right: 9px;
+                top: -5px;
+            }
+        }
+
+        &__points-container {
+            padding: 0 3rem;
+            border-right: $border-thin;
+            display: flex;
+            align-items: center;
+
+            &__my-points {
+                margin-right: 1rem;
+                font: $small-text;
+                color: $gray;
+            }
+
+            .points__amount {
+                color: $gray;
+                font: $medium-text;
+            }
+        }
+    }
+}

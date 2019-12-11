@@ -1,0 +1,64 @@
+@import '../../scss/general.scss';
+
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3rem;
+        border-bottom: $border-thin;
+        width: 90vw;
+        margin: 30vh auto 0 auto;
+
+        .react-spinner-material {
+            margin-top: 2rem
+        }
+
+        &__picture{
+            height: 80px;
+            width: 80px;
+            background-image: url(https://randomuser.me/api/portraits/men/46.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+
+            
+        }
+        &__name{
+            font: $title-2-m;
+            color: $blue;
+            margin: 3rem 0 1rem;
+        }
+        &__buttons {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+
+            button {
+                @include minimal-button-yellow;
+                font: $small-text-m;
+                width: 150px;
+                margin-top: 4rem;
+                margin-bottom: 1rem;
+                margin: 1rem;
+            }
+        }
+    }
+
+    .history {
+        position: relative;
+        &__title {
+            font: $title-4;
+            color: $blue;
+        }
+
+        .react-spinner-material {
+        margin: 8rem auto 0 auto ;
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        }
+    }

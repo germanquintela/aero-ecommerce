@@ -1,0 +1,82 @@
+@import '../../scss/general.scss';
+
+.product-card {
+    border: $border-thin;   
+    box-shadow: $shadow;
+    border-radius: $round;
+    margin: 3rem;
+    max-width: 38rem;
+    padding: 1rem;
+    background-color: white;
+
+    &__image-container {
+        width: 90%;
+        margin: auto;
+        display: block;
+        padding-bottom: 2rem;
+        border-bottom: $border-thin;
+        min-width: 226px;
+    min-height: 150px;
+    display: flex;
+
+        .react-spinner-material {
+            position: unset !important;
+            top: unset !important;
+            left: unset !important;
+            margin: auto;
+        }
+
+        &__image {
+            width: 100%;
+        }
+    };
+
+    &__info-container {
+        width: 90%;
+        margin: auto;
+        margin-top: 2rem;
+
+        &__type {
+            color: $gray;
+            font: $small-text;
+            margin: 1rem 0;
+        }
+
+        &__product {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            height: 32px;
+            
+            &__name {
+                color: $blue;
+                font: $medium-text-m;
+            }
+        }
+        
+        &__button {
+            @include minimal-button-lightgray;
+            width: 100%;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+
+            &--disabled {
+                @include minimal-button-lightgray;
+                width: 100%;
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                border: none;
+                color: $gray;
+
+                &:hover {
+                    transform: translateY(0);
+                    color: $gray;
+                    background-color: white;
+                }
+            }
+        }
+    };
+    
+}

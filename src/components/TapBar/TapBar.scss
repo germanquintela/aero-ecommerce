@@ -1,0 +1,25 @@
+@import "../../scss/general.scss";
+
+.tapbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: $border-thin;
+    margin-top: 3rem;
+    max-width: 350px;
+
+    &__button {
+        padding: 2rem;
+        font: $small-text-m;
+        color: $gray;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__button--active {
+        color: $blue;
+        border-bottom: 2px solid $blue;
+    }
+}

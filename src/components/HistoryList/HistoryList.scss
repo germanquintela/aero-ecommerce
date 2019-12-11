@@ -1,0 +1,61 @@
+@import '../../scss/general.scss';
+
+.history{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90vw;
+    padding-top: 2rem;
+    justify-content: center;
+    
+    .history-card {
+        border: $border-thin;   
+        box-shadow: $shadow;
+        border-radius: $round;
+        margin: 1rem;
+        max-width: 48rem;
+        padding: 1rem;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 360px;
+
+        &__image-container {
+            height:  80px;
+            border-right: $border-thin;
+
+            &__image {
+                height: 100%;
+            }
+        }
+
+        &__info-container {
+            margin-left: 1rem;
+            padding: 1rem;
+            width: 100%;
+
+            &__type {
+                color: $gray;
+                font: $small-text;
+                margin: 1rem 0;
+            }
+
+            &__product {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 2rem;
+                
+
+                &__name {
+                    color: $blue;
+                    font: $medium-text-m;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

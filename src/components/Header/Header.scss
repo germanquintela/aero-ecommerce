@@ -1,0 +1,33 @@
+@import '../../scss/general.scss';
+
+.header {
+    height: 65vh;
+    width: 100%;
+    background-image: url(../../assets/header.png);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4rem;
+
+    &__name {
+        color: $white;
+        font: $title-2-m;
+    };
+
+    &__title {
+        font: $title-1;
+        color: $white;
+    };
+
+    &__input {
+        width: 80%;
+        padding: 2rem;
+        border-radius: $round;
+        outline: none;
+        border: $border;
+        margin-top: 3rem;
+    }
+}

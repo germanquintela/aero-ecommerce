@@ -1,0 +1,33 @@
+@import '../../scss/general.scss';
+
+.product-section {
+    width: 90vw;
+    margin: auto;
+    margin-top: 3rem;
+
+    &__header {
+
+        &__title {
+            font: $title-4;
+            color: $blue;
+        };
+
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__footer {
+        margin: 2rem 0;
+        &__count {
+            text-align: center;
+            font: $medium-text;
+            color: $black;
+        }
+    }
+    
+}

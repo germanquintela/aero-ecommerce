@@ -1,0 +1,41 @@
+@mixin minimal-button-lightgray{
+    border: 2px solid $lightblue;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font: $medium-text-m;
+    color: $lightblue;  
+    cursor: pointer;
+    transition: 0.4s;
+
+    &:hover {
+        transform: translateY(-4px);
+        color: white;
+        background-color: $lightblue;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
+@mixin minimal-button-yellow{
+    border: 2px solid $yellow;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font: $medium-text-m;
+    color: $yellow;  
+    cursor: pointer;
+    transition: 0.4s;
+
+    &:hover {
+        transform: translateY(-4px);
+        color: white;
+        background-color: $yellow;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
